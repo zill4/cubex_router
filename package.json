@@ -1,0 +1,40 @@
+{
+  "name": "@cubex/router",
+  "version": "0.3.3",
+  "description": "A simple hash routing utility",
+  "repository": "https://www.github.com/Cubex30/router.git",
+  "license": "MIT",
+  "author": "Sean Johnson <sjohnson@sjohnsonaz.com>",
+  "main": "dist/scripts/router.js",
+  "typings": "dist/scripts/router.d.ts",
+  "scripts": {
+    "start": "node ./dist/scripts/router.js",
+    "build": "tsc",
+    "prepublishOnly": "rimraf ./dist && tsc --declaration",
+    "test": "tsc && node src/mocha/NodeRunner.js",
+    "clean": "rimraf ./dist",
+    "min": "webpack --config webpack.config.js --progress",
+    "dev": "webpack --config webpack.dev.config.js --progress",
+    "watch": "webpack --config webpack.dev.config.js --watch --progress",
+    "node": "node ./dist/scripts/router.js",
+    "nodemon": "nodemon ./dist/scripts/router.js",
+    "mkdocs": "mkdocs build",
+    "mkdocs-serve": "mkdocs serve",
+    "mkdocs-deploy": "mkdocs gh-deploy",
+    "open": "opn src/mocha/index.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "4.1.7",
+    "@types/mocha": "5.2.7",
+    "chai": "4.2.0",
+    "jsdom": "11.11.0",
+    "mocha": "6.1.4",
+    "opn-cli": "5.0.0",
+    "rimraf": "2.6.3",
+    "ts-loader": "6.0.4",
+    "typescript": "3.5.2",
+    "webpack": "4.35.0",
+    "webpack-cli": "3.3.5"
+  }
+}
