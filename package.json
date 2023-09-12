@@ -1,8 +1,8 @@
 {
-  "name": "@cubex/router",
+  "name": "cubex_router",
   "version": "0.3.3",
   "description": "A simple hash routing utility",
-  "repository": "https://www.github.com/Cubex30/router.git",
+  "repository": "https://github.com/zill4/cubex_router.git",
   "license": "MIT",
   "author": "Sean Johnson <sjohnson@sjohnsonaz.com>",
   "main": "dist/scripts/router.js",
