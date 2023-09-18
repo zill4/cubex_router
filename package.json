@@ -23,18 +23,17 @@
     "mkdocs-deploy": "mkdocs gh-deploy",
     "open": "opn src/mocha/index.html"
   },
-  "dependencies": {},
   "devDependencies": {
-    "@types/chai": "4.1.7",
-    "@types/mocha": "5.2.7",
+    "@types/chai": "4.2.11",
+    "@types/mocha": "7.0.2",
     "chai": "4.2.0",
-    "jsdom": "11.11.0",
-    "mocha": "6.1.4",
+    "jsdom": "16.2.2",
+    "mocha": "8.0.1",
     "opn-cli": "5.0.0",
-    "rimraf": "2.6.3",
-    "ts-loader": "6.0.4",
-    "typescript": "3.5.2",
-    "webpack": "4.35.0",
-    "webpack-cli": "3.3.5"
+    "rimraf": "3.0.2",
+    "ts-loader": "7.0.5",
+    "typescript": "3.9.5",
+    "webpack": "4.43.0",
+    "webpack-cli": "3.3.12"
   }
 }
