@@ -32,7 +32,7 @@ export default class Router {
                 this.previousRoute = this.currentRoute;
                 this.currentRoute = undefined;
 
-                let params: RegExpMatchArray;
+                let params: string[];
                 // We will try and find a route
                 if (hash) {
                     if (this.routes) {

@@ -27,7 +27,7 @@ export default class RouteUtils {
 
     static functionToRegex(prefix: string, enter: Function): RegExp {
         var params = RouteUtils.getParameterNames(enter);
-        params.unshift(prefix);
+        params.unshift(prefix as never);
         return RouteUtils.stringToRegex(params.join('/:'));
     }
 
@@ -50,7 +50,7 @@ export default class RouteUtils {
 
     static buildFromFunction(prefix: string, enter: Function, exit?: (newHash: string) => void): IRoute {
         var params = RouteUtils.getParameterNames(enter);
-        params.unshift(prefix);
+        params.unshift(prefix as never);
         var definition = params.join('/:');
         return RouteUtils.build(definition, enter, exit);
     }

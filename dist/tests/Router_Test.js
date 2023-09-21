@@ -14,7 +14,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     function verb(n) { return function (v) { return step([n, v]); }; }
     function step(op) {
         if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
             if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
             if (y = 0, t) op = [op[0] & 2, t.value];
             switch (op[0]) {
@@ -92,24 +92,24 @@ describe('Router', function () {
                 case 0:
                     resetCounts();
                     window.location.hash = '';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 1:
                     _a.sent();
                     router.start();
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 2:
                     _a.sent();
                     router.stop();
-                    chai_1.expect(changeCount).to.equal(1);
-                    chai_1.expect(defaultCount).to.equal(1);
-                    chai_1.expect(errorCount).to.equal(0);
-                    chai_1.expect(test0Count).to.equal(0);
-                    chai_1.expect(test0ExitCount).to.equal(0);
-                    chai_1.expect(test1Count).to.equal(0);
-                    chai_1.expect(test1ValueId).to.equal(undefined);
-                    chai_1.expect(test2Count).to.equal(0);
-                    chai_1.expect(test2ValueId).to.equal(undefined);
-                    chai_1.expect(test2ValueName).to.equal(undefined);
+                    (0, chai_1.expect)(changeCount).to.equal(1);
+                    (0, chai_1.expect)(defaultCount).to.equal(1);
+                    (0, chai_1.expect)(errorCount).to.equal(0);
+                    (0, chai_1.expect)(test0Count).to.equal(0);
+                    (0, chai_1.expect)(test0ExitCount).to.equal(0);
+                    (0, chai_1.expect)(test1Count).to.equal(0);
+                    (0, chai_1.expect)(test1ValueId).to.equal(undefined);
+                    (0, chai_1.expect)(test2Count).to.equal(0);
+                    (0, chai_1.expect)(test2ValueId).to.equal(undefined);
+                    (0, chai_1.expect)(test2ValueName).to.equal(undefined);
                     return [2];
             }
         });
@@ -120,28 +120,28 @@ describe('Router', function () {
                 case 0:
                     resetCounts();
                     window.location.hash = '';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 1:
                     _a.sent();
                     router.start();
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 2:
                     _a.sent();
                     window.location.hash = 'test';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 3:
                     _a.sent();
                     router.stop();
-                    chai_1.expect(changeCount).to.equal(2);
-                    chai_1.expect(defaultCount).to.equal(1);
-                    chai_1.expect(errorCount).to.equal(0);
-                    chai_1.expect(test0Count).to.equal(1);
-                    chai_1.expect(test0ExitCount).to.equal(0);
-                    chai_1.expect(test1Count).to.equal(0);
-                    chai_1.expect(test1ValueId).to.equal(undefined);
-                    chai_1.expect(test2Count).to.equal(0);
-                    chai_1.expect(test2ValueId).to.equal(undefined);
-                    chai_1.expect(test2ValueName).to.equal(undefined);
+                    (0, chai_1.expect)(changeCount).to.equal(2);
+                    (0, chai_1.expect)(defaultCount).to.equal(1);
+                    (0, chai_1.expect)(errorCount).to.equal(0);
+                    (0, chai_1.expect)(test0Count).to.equal(1);
+                    (0, chai_1.expect)(test0ExitCount).to.equal(0);
+                    (0, chai_1.expect)(test1Count).to.equal(0);
+                    (0, chai_1.expect)(test1ValueId).to.equal(undefined);
+                    (0, chai_1.expect)(test2Count).to.equal(0);
+                    (0, chai_1.expect)(test2ValueId).to.equal(undefined);
+                    (0, chai_1.expect)(test2ValueName).to.equal(undefined);
                     return [2];
             }
         });
@@ -152,28 +152,28 @@ describe('Router', function () {
                 case 0:
                     resetCounts();
                     window.location.hash = 'test';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 1:
                     _a.sent();
                     router.start();
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 2:
                     _a.sent();
                     window.location.hash = '';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 3:
                     _a.sent();
                     router.stop();
-                    chai_1.expect(changeCount).to.equal(2);
-                    chai_1.expect(defaultCount).to.equal(1);
-                    chai_1.expect(errorCount).to.equal(0);
-                    chai_1.expect(test0Count).to.equal(1);
-                    chai_1.expect(test0ExitCount).to.equal(1);
-                    chai_1.expect(test1Count).to.equal(0);
-                    chai_1.expect(test1ValueId).to.equal(undefined);
-                    chai_1.expect(test2Count).to.equal(0);
-                    chai_1.expect(test2ValueId).to.equal(undefined);
-                    chai_1.expect(test2ValueName).to.equal(undefined);
+                    (0, chai_1.expect)(changeCount).to.equal(2);
+                    (0, chai_1.expect)(defaultCount).to.equal(1);
+                    (0, chai_1.expect)(errorCount).to.equal(0);
+                    (0, chai_1.expect)(test0Count).to.equal(1);
+                    (0, chai_1.expect)(test0ExitCount).to.equal(1);
+                    (0, chai_1.expect)(test1Count).to.equal(0);
+                    (0, chai_1.expect)(test1ValueId).to.equal(undefined);
+                    (0, chai_1.expect)(test2Count).to.equal(0);
+                    (0, chai_1.expect)(test2ValueId).to.equal(undefined);
+                    (0, chai_1.expect)(test2ValueName).to.equal(undefined);
                     return [2];
             }
         });
@@ -184,28 +184,28 @@ describe('Router', function () {
                 case 0:
                     resetCounts();
                     window.location.hash = '';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 1:
                     _a.sent();
                     router.start(true);
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 2:
                     _a.sent();
                     window.location.hash = '';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 3:
                     _a.sent();
                     router.stop();
-                    chai_1.expect(changeCount).to.equal(0);
-                    chai_1.expect(defaultCount).to.equal(0);
-                    chai_1.expect(errorCount).to.equal(0);
-                    chai_1.expect(test0Count).to.equal(0);
-                    chai_1.expect(test0ExitCount).to.equal(0);
-                    chai_1.expect(test1Count).to.equal(0);
-                    chai_1.expect(test1ValueId).to.equal(undefined);
-                    chai_1.expect(test2Count).to.equal(0);
-                    chai_1.expect(test2ValueId).to.equal(undefined);
-                    chai_1.expect(test2ValueName).to.equal(undefined);
+                    (0, chai_1.expect)(changeCount).to.equal(0);
+                    (0, chai_1.expect)(defaultCount).to.equal(0);
+                    (0, chai_1.expect)(errorCount).to.equal(0);
+                    (0, chai_1.expect)(test0Count).to.equal(0);
+                    (0, chai_1.expect)(test0ExitCount).to.equal(0);
+                    (0, chai_1.expect)(test1Count).to.equal(0);
+                    (0, chai_1.expect)(test1ValueId).to.equal(undefined);
+                    (0, chai_1.expect)(test2Count).to.equal(0);
+                    (0, chai_1.expect)(test2ValueId).to.equal(undefined);
+                    (0, chai_1.expect)(test2ValueName).to.equal(undefined);
                     return [2];
             }
         });
@@ -216,28 +216,28 @@ describe('Router', function () {
                 case 0:
                     resetCounts();
                     window.location.hash = 'abcd';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 1:
                     _a.sent();
                     router.start(true);
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 2:
                     _a.sent();
                     window.location.hash = 'test';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 3:
                     _a.sent();
                     router.stop();
-                    chai_1.expect(changeCount).to.equal(1);
-                    chai_1.expect(defaultCount).to.equal(0);
-                    chai_1.expect(errorCount).to.equal(0);
-                    chai_1.expect(test0Count).to.equal(1);
-                    chai_1.expect(test0ExitCount).to.equal(0);
-                    chai_1.expect(test1Count).to.equal(0);
-                    chai_1.expect(test1ValueId).to.equal(undefined);
-                    chai_1.expect(test2Count).to.equal(0);
-                    chai_1.expect(test2ValueId).to.equal(undefined);
-                    chai_1.expect(test2ValueName).to.equal(undefined);
+                    (0, chai_1.expect)(changeCount).to.equal(1);
+                    (0, chai_1.expect)(defaultCount).to.equal(0);
+                    (0, chai_1.expect)(errorCount).to.equal(0);
+                    (0, chai_1.expect)(test0Count).to.equal(1);
+                    (0, chai_1.expect)(test0ExitCount).to.equal(0);
+                    (0, chai_1.expect)(test1Count).to.equal(0);
+                    (0, chai_1.expect)(test1ValueId).to.equal(undefined);
+                    (0, chai_1.expect)(test2Count).to.equal(0);
+                    (0, chai_1.expect)(test2ValueId).to.equal(undefined);
+                    (0, chai_1.expect)(test2ValueName).to.equal(undefined);
                     return [2];
             }
         });
@@ -248,28 +248,28 @@ describe('Router', function () {
                 case 0:
                     resetCounts();
                     window.location.hash = '';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 1:
                     _a.sent();
                     router.start(true);
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 2:
                     _a.sent();
                     window.location.hash = 'abcd';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 3:
                     _a.sent();
                     router.stop();
-                    chai_1.expect(changeCount).to.equal(1);
-                    chai_1.expect(defaultCount).to.equal(0);
-                    chai_1.expect(errorCount).to.equal(1);
-                    chai_1.expect(test0Count).to.equal(0);
-                    chai_1.expect(test0ExitCount).to.equal(0);
-                    chai_1.expect(test1Count).to.equal(0);
-                    chai_1.expect(test1ValueId).to.equal(undefined);
-                    chai_1.expect(test2Count).to.equal(0);
-                    chai_1.expect(test2ValueId).to.equal(undefined);
-                    chai_1.expect(test2ValueName).to.equal(undefined);
+                    (0, chai_1.expect)(changeCount).to.equal(1);
+                    (0, chai_1.expect)(defaultCount).to.equal(0);
+                    (0, chai_1.expect)(errorCount).to.equal(1);
+                    (0, chai_1.expect)(test0Count).to.equal(0);
+                    (0, chai_1.expect)(test0ExitCount).to.equal(0);
+                    (0, chai_1.expect)(test1Count).to.equal(0);
+                    (0, chai_1.expect)(test1ValueId).to.equal(undefined);
+                    (0, chai_1.expect)(test2Count).to.equal(0);
+                    (0, chai_1.expect)(test2ValueId).to.equal(undefined);
+                    (0, chai_1.expect)(test2ValueName).to.equal(undefined);
                     return [2];
             }
         });
@@ -280,36 +280,36 @@ describe('Router', function () {
                 case 0:
                     resetCounts();
                     window.location.hash = '';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 1:
                     _a.sent();
                     router.start(true);
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 2:
                     _a.sent();
                     window.location.hash = 'test';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 3:
                     _a.sent();
                     window.location.hash = 'test/1';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 4:
                     _a.sent();
                     window.location.hash = 'test/2/value with spaces';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 5:
                     _a.sent();
                     router.stop();
-                    chai_1.expect(changeCount).to.equal(3);
-                    chai_1.expect(defaultCount).to.equal(0);
-                    chai_1.expect(errorCount).to.equal(0);
-                    chai_1.expect(test0Count).to.equal(1);
-                    chai_1.expect(test0ExitCount).to.equal(1);
-                    chai_1.expect(test1Count).to.equal(1);
-                    chai_1.expect(test1ValueId).to.equal('1');
-                    chai_1.expect(test2Count).to.equal(1);
-                    chai_1.expect(test2ValueId).to.equal('2');
-                    chai_1.expect(test2ValueName).to.equal('value with spaces');
+                    (0, chai_1.expect)(changeCount).to.equal(3);
+                    (0, chai_1.expect)(defaultCount).to.equal(0);
+                    (0, chai_1.expect)(errorCount).to.equal(0);
+                    (0, chai_1.expect)(test0Count).to.equal(1);
+                    (0, chai_1.expect)(test0ExitCount).to.equal(1);
+                    (0, chai_1.expect)(test1Count).to.equal(1);
+                    (0, chai_1.expect)(test1ValueId).to.equal('1');
+                    (0, chai_1.expect)(test2Count).to.equal(1);
+                    (0, chai_1.expect)(test2ValueId).to.equal('2');
+                    (0, chai_1.expect)(test2ValueName).to.equal('value with spaces');
                     return [2];
             }
         });
@@ -343,20 +343,20 @@ describe('Router.beforeMatch', function () {
                 case 0:
                     resetCounts();
                     window.location.hash = '';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 1:
                     _a.sent();
                     router.start(true);
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 2:
                     _a.sent();
                     window.location.hash = 'test';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 3:
                     _a.sent();
                     router.stop();
-                    chai_1.expect(testCount).to.equal(1);
-                    chai_1.expect(otherCount).to.equal(0);
+                    (0, chai_1.expect)(testCount).to.equal(1);
+                    (0, chai_1.expect)(otherCount).to.equal(0);
                     return [2];
             }
         });
@@ -367,20 +367,20 @@ describe('Router.beforeMatch', function () {
                 case 0:
                     resetCounts();
                     window.location.hash = '';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 1:
                     _a.sent();
                     router.start(true);
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 2:
                     _a.sent();
                     window.location.hash = 'other';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 3:
                     _a.sent();
                     router.stop();
-                    chai_1.expect(testCount).to.equal(1);
-                    chai_1.expect(otherCount).to.equal(0);
+                    (0, chai_1.expect)(testCount).to.equal(1);
+                    (0, chai_1.expect)(otherCount).to.equal(0);
                     return [2];
             }
         });
@@ -391,20 +391,20 @@ describe('Router.beforeMatch', function () {
                 case 0:
                     resetCounts();
                     window.location.hash = '';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 1:
                     _a.sent();
                     router.start(true);
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 2:
                     _a.sent();
                     window.location.hash = 'another';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 3:
                     _a.sent();
                     router.stop();
-                    chai_1.expect(testCount).to.equal(0);
-                    chai_1.expect(otherCount).to.equal(0);
+                    (0, chai_1.expect)(testCount).to.equal(0);
+                    (0, chai_1.expect)(otherCount).to.equal(0);
                     return [2];
             }
         });
@@ -444,32 +444,32 @@ describe('Router.addFunctionGroup', function () {
                 case 0:
                     resetCounts();
                     window.location.hash = '';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 1:
                     _a.sent();
                     router.start(true);
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 2:
                     _a.sent();
                     window.location.hash = 'test';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 3:
                     _a.sent();
                     window.location.hash = 'test/1';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 4:
                     _a.sent();
                     window.location.hash = '';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 5:
                     _a.sent();
                     router.stop();
-                    chai_1.expect(route0Count).to.equal(1);
-                    chai_1.expect(route0GroupChange).to.equal(true);
-                    chai_1.expect(route1Count).to.equal(1);
-                    chai_1.expect(route1GroupChange).to.equal(false);
-                    chai_1.expect(exitCount).to.equal(1);
-                    chai_1.expect(exitGroupChange).to.equal(true);
+                    (0, chai_1.expect)(route0Count).to.equal(1);
+                    (0, chai_1.expect)(route0GroupChange).to.equal(true);
+                    (0, chai_1.expect)(route1Count).to.equal(1);
+                    (0, chai_1.expect)(route1GroupChange).to.equal(false);
+                    (0, chai_1.expect)(exitCount).to.equal(1);
+                    (0, chai_1.expect)(exitGroupChange).to.equal(true);
                     return [2];
             }
         });

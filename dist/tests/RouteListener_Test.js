@@ -3,10 +3,12 @@ var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
             ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -27,7 +29,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     function verb(n) { return function (v) { return step([n, v]); }; }
     function step(op) {
         if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
             if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
             if (y = 0, t) op = [op[0] & 2, t.value];
             switch (op[0]) {
@@ -71,16 +73,16 @@ describe('RouteListener', function () {
             switch (_a.label) {
                 case 0:
                     window.location.hash = '';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 1:
                     _a.sent();
                     router = new SimpleRouter();
                     router.start();
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 2:
                     _a.sent();
                     router.stop();
-                    chai_1.expect(router.runCount).to.equal(1);
+                    (0, chai_1.expect)(router.runCount).to.equal(1);
                     return [2];
             }
         });
@@ -91,16 +93,16 @@ describe('RouteListener', function () {
             switch (_a.label) {
                 case 0:
                     window.location.hash = '';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 1:
                     _a.sent();
                     router = new SimpleRouter();
                     router.start(true);
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 2:
                     _a.sent();
                     router.stop();
-                    chai_1.expect(router.runCount).to.equal(0);
+                    (0, chai_1.expect)(router.runCount).to.equal(0);
                     return [2];
             }
         });
@@ -111,20 +113,20 @@ describe('RouteListener', function () {
             switch (_a.label) {
                 case 0:
                     window.location.hash = '';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 1:
                     _a.sent();
                     router = new SimpleRouter();
                     router.start();
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 2:
                     _a.sent();
                     window.location.hash = 'test';
-                    return [4, TestUtils_1.wait(0)];
+                    return [4, (0, TestUtils_1.wait)(0)];
                 case 3:
                     _a.sent();
                     router.stop();
-                    chai_1.expect(router.runCount).to.equal(2);
+                    (0, chai_1.expect)(router.runCount).to.equal(2);
                     return [2];
             }
         });
